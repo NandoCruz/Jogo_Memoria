@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Jogo_Memoria</string>
+    <string name="txt_nome">Nome</string>
+    <string name="Edit_nome" />
+    <string name="btn_avancar">Avançar</string>
+
+    <string name="txt_toque">Toque nos Círculos</string>
+    <string name="txt_igual1">=</string>
+    <string name="txt_valor_img">1</string>
+    <string name="txt_igual">=</string>
+    <string name="txt_soma">+</string>
+    <string name="txt_soma1">+</string>
+    <string name="btn_avanca">Avançar</string>
+    <string name="txt_num01">1</string>
+    <string name="txt_num02">1</string>
+    <string name="txt_num03">1</string>
+    <string name="txt_resultado">3</string>
+    <string name="img_imagem01">Imagem01</string>
+    <string name="img_imagem02">Imagem02</string>
+    <string name="img_imagem03">Imagem03</string>
+    <string name="img_baixo">Imagem de Baixo</string>
+    <string name="img_topo">Imagem Topo</string>
+    <string name="img_varias">Varias Imagens</string>
+    <string name="img_titulo">Titulo</string>
+    <string name="menu_info">Informações</string>
+    <string name="menu_sair">Sair</string>
+    <string name="btn_2">1</string>
+
+</resources>
