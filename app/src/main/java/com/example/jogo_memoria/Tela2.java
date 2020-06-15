@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import static com.example.jogo_memoria.R.drawable.circulo_m;
@@ -17,11 +16,13 @@ import static com.example.jogo_memoria.R.drawable.retangulo_m;
 import static com.example.jogo_memoria.R.drawable.triangulo_m;
 
 public class Tela2 extends AppCompatActivity {
+    // Declaração de Variáveis:
     TextView nomeImg2, valorImg, num1, num2, num3, result;
     ImageView imgTopo, imgBase;
     ImageButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button botaoGerarNr;
 
+    // Declaração de imagens
     Integer[] images = {
             R.drawable.circulo_p,
             R.drawable.quadrado_p,
@@ -30,6 +31,7 @@ public class Tela2 extends AppCompatActivity {
             R.drawable.oval_p
     };
 
+    // Declaração de ImageButtons
     Integer[] imageButtons = {
             R.drawable.circulo_m,
             R.drawable.quadrado_m,
@@ -42,7 +44,7 @@ public class Tela2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
-
+        // Integrando XML ao JAVA
         valorImg = findViewById(R.id.valor_img);
         nomeImg2 = findViewById(R.id.nome_img);
         num1 = findViewById(R.id.num01);
@@ -77,10 +79,10 @@ public class Tela2 extends AppCompatActivity {
     // Método Imagens Aleatórias:
     private void imagesAleatorios() {
         String aux = "";
-        int[] img = new int[4];
+        int[] img = new int[10];
 
         for (int i=0; i<imageButtons.length; i++){
-            img[i] = (int)(Math.random()*9);
+            img[i] = (int)(Math.random()*10);
             aux = "=" + img[i];
         } // fim do For
 
@@ -184,8 +186,8 @@ public class Tela2 extends AppCompatActivity {
         String aux="";
         int[] num = new int[2];
 
-        for (int i=1; i<2; i++){
-            num[i]=(int)(Math.random()*5);
+        for (int i=0; i<2; i++){
+            num[i]=(int)(Math.random()*4);
             if (num[i] == 0){
                 num[i] = 3;
                 aux = " = " + num[i];
@@ -193,26 +195,24 @@ public class Tela2 extends AppCompatActivity {
                 aux = " = " + num[i];
             }
         } // fim do For
+        valorImg.setText(aux); // Exibir número no topo
 
-        // Exibir número no topo
-        valorImg.setText(aux);
-
+        /*
         // Exibir Nome da Imagem e Imagem no topo
-        if ((num[0] == 0 && num[0] != 1) && (num[0] != 2 && num[0] != 3)){ // Se 0 = 0 e != de 1,2,3
+        if (num[0] == 0){
             imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.quadrado_p));
             nomeImg2.setText("Toque nos Quadrados");
-        } else if ((num[1] != 0 && num[1] == 1) && (num[1] != 2 && num[1] != 3)) { // Se 1 = 1 e != de 0,2,3
+        } else if (num[1] == 1) {
             imgTopo.getResources().getDrawable(R.drawable.retangulo_p);
             nomeImg2.setText("Toque nos Retâgulos");
-        } else if ((num[2] != 0 && num[2] != 1) && (num[2] == 2 && num[2] != 3)) { // Se 2 = 2 e != de 0,1,3
+        } else if (num[2] == 2 ) {
             imgTopo.getResources().getDrawable(R.drawable.circulo_p);
             nomeImg2.setText("Toque nos Círulos");
-        } else if ((num[3] != 0 && num[3] != 1) && (num[3] != 2 && num[3] == 3)) { // Se 3 = 3 e != de 0, 1,2
+        } else if (num[3] == 3) {
             imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.triangulo_p));
             nomeImg2.setText("Toque nos Triângilos");
         } // fim do Else If
-
+        */
     } // fim do numeroesAleatorios
-
 
 } // fim da classe
