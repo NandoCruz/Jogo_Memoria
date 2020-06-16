@@ -11,15 +11,23 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import static com.example.jogo_memoria.R.drawable.circulo_g;
+import static com.example.jogo_memoria.R.drawable.circulo_g1;
+import static com.example.jogo_memoria.R.drawable.circulo_g2;
 import static com.example.jogo_memoria.R.drawable.circulo_m;
 import static com.example.jogo_memoria.R.drawable.circulo_p;
 import static com.example.jogo_memoria.R.drawable.quadrado_g;
+import static com.example.jogo_memoria.R.drawable.quadrado_g1;
+import static com.example.jogo_memoria.R.drawable.quadrado_g2;
 import static com.example.jogo_memoria.R.drawable.quadrado_m;
 import static com.example.jogo_memoria.R.drawable.quadrado_p;
 import static com.example.jogo_memoria.R.drawable.retangulo_g;
+import static com.example.jogo_memoria.R.drawable.retangulo_g1;
+import static com.example.jogo_memoria.R.drawable.retangulo_g2;
 import static com.example.jogo_memoria.R.drawable.retangulo_m;
 import static com.example.jogo_memoria.R.drawable.retangulo_p;
 import static com.example.jogo_memoria.R.drawable.triangulo_g;
+import static com.example.jogo_memoria.R.drawable.triangulo_g1;
+import static com.example.jogo_memoria.R.drawable.triangulo_g2;
 import static com.example.jogo_memoria.R.drawable.triangulo_m;
 import static com.example.jogo_memoria.R.drawable.triangulo_p;
 
@@ -30,25 +38,36 @@ public class Tela2 extends AppCompatActivity {
     ImageButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button botaoGerarNr;
 
-    // Declaração de imagens
+    // Declaração de imagens Pequenas
     Integer[] images = {
             R.drawable.circulo_p,
             R.drawable.quadrado_p,
             R.drawable.retangulo_p,
             R.drawable.triangulo_p,
-            R.drawable.oval_p
     };
 
-    // Declaração de ImageButtons
+    // Declaração de ImageButtons Imagens Médias
     Integer[] imageButtons = {
             R.drawable.circulo_m,
             R.drawable.quadrado_m,
             R.drawable.triangulo_m,
-            R.drawable.triangulo_m,
-            R.drawable.oval_m
+            R.drawable.retangulo_m,
     };
 
-    // Declaração de Buttons
+    // Declaração de Imagens fundo Vermelho
+    Integer[] imageVermelha = {
+            R.drawable.circulo_g2,
+            R.drawable.quadrado_g2,
+            R.drawable.triangulo_g2,
+            R.drawable.retangulo_g2,
+    };
+
+    Integer[] imageAzul = {
+            R.drawable.circulo_g1,
+            R.drawable.quadrado_g1,
+            R.drawable.triangulo_g1,
+            R.drawable.retangulo_g1,
+    };
 
 
 
@@ -86,92 +105,105 @@ public class Tela2 extends AppCompatActivity {
             }
         });
 
-        // Botões das Imagens
+        // Botão OnClick 1
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                botoes();
-            }
-        }); // Fim do Onclick btn1
+                String contaString = valorImg.getText().toString();
+                int valor = Integer.parseInt(contaString);
 
-        /*
+                if (btn1 == imgTopo) {
+                    // num1.setText("1");
+                    btn2.setImageDrawable(getResources().getDrawable(circulo_g1));
+                } else {
+                    btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn1
 
+        // Botão OnClick 2
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn2 == imgTopo) {
-                    btn2.setImageDrawable(getResources().getDrawable(circulo_g));
+                    btn2.setImageDrawable(getResources().getDrawable(circulo_g1));
                 } else {
-                    btn2.setImageDrawable(getResources().getDrawable(circulo_p));
-                }
-            }
-        }); // Fim do Onclick btn2
+                    btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn2
 
+        // Botão OnClick 3
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn3 == imgTopo) {
-                    btn3.setImageDrawable(getResources().getDrawable(quadrado_g));
+                    btn3.setImageDrawable(getResources().getDrawable(quadrado_g1));
                 } else {
-                    btn3.setImageDrawable(getResources().getDrawable(quadrado_p));
-                }
-            }
-        }); // Fim do Onclick btn3
+                    btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn3
 
+        // Botão OnClick 5
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn4 == imgTopo) {
-                    btn4.setImageDrawable(getResources().getDrawable(triangulo_g));
+                    btn4.setImageDrawable(getResources().getDrawable(triangulo_g1));
                 } else {
-                    btn4.setImageDrawable(getResources().getDrawable(triangulo_p));
-                }
-            }
-        }); // Fim do Onclick btn4
+                    btn4.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn4
 
+        // Botão OnClick 5
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn5 == imgTopo) {
-                    btn5.setImageDrawable(getResources().getDrawable(retangulo_g));
+                    btn5.setImageDrawable(getResources().getDrawable(retangulo_g1));
                 } else {
-                    btn5.setImageDrawable(getResources().getDrawable(retangulo_p));
-                }
-            }
-        }); // Fim do Onclick btn5
+                    btn5.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn5
 
+        // Botão OnClick 6
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn6 == imgTopo) {
-                    btn6.setImageDrawable(getResources().getDrawable(quadrado_g));
+                    btn6.setImageDrawable(getResources().getDrawable(quadrado_g1));
                 } else {
-                    btn6.setImageDrawable(getResources().getDrawable(quadrado_p));
-                }
-            }
-        }); // Fim do Onclick btn6
+                    btn6.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn6
 
+        // Botão OnClick 7
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn7 == imgTopo) {
-                    btn7.setImageDrawable(getResources().getDrawable(retangulo_g));
+                    btn7.setImageDrawable(getResources().getDrawable(retangulo_g1));
                 } else {
-                    btn7.setImageDrawable(getResources().getDrawable(retangulo_p));
-                }
-            }
-        }); // Fim do Onclick btn7
+                    btn7.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn7
 
+        // Botão OnClick 8
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (btn8 == imgTopo) {
-                    btn5.setImageDrawable(getResources().getDrawable(triangulo_g));
+                    btn5.setImageDrawable(getResources().getDrawable(triangulo_g1));
                 } else {
-                    btn8.setImageDrawable(getResources().getDrawable(triangulo_p));
-                }
-            }
-        }); // Fim do Onclick btn8
+                    btn8.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                } // fim do If
+            } // Fm do OnClick
+        }); // Fim do OnclickListener btn8
 
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,7 +241,7 @@ public class Tela2 extends AppCompatActivity {
             btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
             btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
             btn4.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(circulo_m));
+            btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
             btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
             btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
             btn8.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -294,43 +326,39 @@ public class Tela2 extends AppCompatActivity {
         int[] num = new int[4];
 
         for (int i=0; i<num.length; i++){
-            num[i]=(int)(Math.random()*3);
+            num[i]=(int)(Math.random()*4);
         } // fim do For
 
         // Exibir Nome da Imagem e Imagem no topo
         if (num[0] == 0){
-            imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.circulo_p));
+            imgTopo.setImageDrawable(getResources().getDrawable(circulo_p));
+            imgBase.setImageDrawable(getResources().getDrawable(circulo_p));
             nomeImg2.setText("Toque nos Círulos");
+            num1.setText("1"); num2.setText("1"); num3.setText("1");
+            result.setText("3");
             valorImg.setText("= 1");
         } else if (num[1] == 1) {
-            imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.retangulo_p));
+            imgTopo.setImageDrawable(getResources().getDrawable(retangulo_p));
+            imgBase.setImageDrawable(getResources().getDrawable(retangulo_p));
             nomeImg2.setText("Toque nos Retâgulos");
+            num1.setText("2"); num2.setText("2"); num3.setText("2");
+            result.setText("6");
             valorImg.setText("= 2");
         } else if (num[2] == 2 ) {
-            imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.quadrado_p));
+            imgTopo.setImageDrawable(getResources().getDrawable(quadrado_p));
+            imgBase.setImageDrawable(getResources().getDrawable(quadrado_p));
             nomeImg2.setText("Toque nos Quadrados");
+            num1.setText("3"); num2.setText("3"); num3.setText("3");
+            result.setText("9");
             valorImg.setText("= 3");
         } else if (num[3] == 3) {
-            imgTopo.setImageDrawable(getResources().getDrawable(R.drawable.triangulo_p));
+            imgTopo.setImageDrawable(getResources().getDrawable(triangulo_p));
+            imgBase.setImageDrawable(getResources().getDrawable(triangulo_p));
             nomeImg2.setText("Toque nos Triângilos");
+            num1.setText("4"); num2.setText("4"); num3.setText("4");
+            result.setText("12");
             valorImg.setText("= 4");
         } // fim do Else If
     } // fim do numeroesAleatorios
-
-    // Seleção de Botões
-    private void botoes() {
-        String contaString = valorImg.getText().toString();
-        int valor = Integer.parseInt(contaString);
-        switch (valor){
-            case 1:
-                if (btn1 == imgTopo) {
-                    btn1.setImageDrawable(getResources().getDrawable(circulo_g));
-                } else {
-                    btn1.setImageDrawable(getResources().getDrawable(circulo_g));
-                } // Fim do If
-
-        } // fim do SWITCH
-
-    } // fim do Método Botoões
 
 } // fim da classe
