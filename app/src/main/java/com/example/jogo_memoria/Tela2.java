@@ -486,7 +486,6 @@ public class Tela2 extends AppCompatActivity {
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g1));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
                         num1.setText("4");
-
                     } // fim do If else caso Imagem for 4 triangulo
 
                 } else if (aleBtn == 8) { // 9ª sequência das imagens nos butões
@@ -808,24 +807,24 @@ public class Tela2 extends AppCompatActivity {
                 } else if (aleBtn == 3) { // 4ª sequência das imagens nos butões
                     if (casoImg == 1) { // circulo
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g1));
-                        btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-                        btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
                         num2.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g2));
-                        btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-                        btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
 
                     } else if (casoImg == 3) { // quadrado
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g2));
-                        btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-                        btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
 
                     } else if (casoImg == 4) { // triangulo
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g2));
-                        btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-                        btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 4) { // 5ª sequência das imagens nos butões
@@ -918,7 +917,6 @@ public class Tela2 extends AppCompatActivity {
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-
                     } // fim do If else caso Imagem for 1 circulo
 
                 } else if (aleBtn == 8) { // 9ª sequência das imagens nos butões
@@ -2030,116 +2028,114 @@ public class Tela2 extends AppCompatActivity {
 
         for (int i=0; i<imageButtons.length; i++){
             img[i] = (int)(Math.random()*10);
+
+            if (img[0] == 0){
+                aleBtn = 0;
+                btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn4.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(circulo_m));
+            } else if (img[1] == 1){
+                aleBtn = 1;
+                btn1.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn8.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
+            } else if (img[2] == 2){
+                aleBtn = 2;
+                btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn4.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn5.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
+            } else if (img[3] == 3){
+                aleBtn = 3;
+                btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn2.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn9.setImageDrawable(getResources().getDrawable(circulo_m));
+            } else if (img[4] == 4){
+                aleBtn = 4;
+                btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn6.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(retangulo_m));
+            } else if (img[5] == 5){
+                aleBtn = 5;
+                btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn6.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
+            } else if (img[6] == 6){
+                aleBtn = 6;
+                btn1.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(circulo_m));
+            } else if (img[7] == 7){
+                aleBtn = 7;
+                btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
+            } else if (img[8] == 8){
+                aleBtn = 8;
+                btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn2.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn4.setImageDrawable(getResources().getDrawable(circulo_m));
+                btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
+                btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn7.setImageDrawable(getResources().getDrawable(triangulo_m));
+                btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
+                btn9.setImageDrawable(getResources().getDrawable(circulo_m));
+            } // Fim do If e Else
         } // fim do For
-
-        if (img[0] == 0){
-            aleBtn = 0;
-            btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn4.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-        } else if (img[1] == 1){
-            aleBtn = 1;
-            btn1.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn8.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
-        } else if (img[2] == 2){
-            aleBtn = 2;
-            btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn4.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn5.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
-        } else if (img[3] == 3){
-            aleBtn = 3;
-            btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn2.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn6.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-        } else if (img[4] == 4){
-            aleBtn = 4;
-            btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn6.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(retangulo_m));
-        } else if (img[5] == 5){
-            aleBtn = 5;
-            btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn6.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
-        } else if (img[6] == 6){
-            aleBtn = 6;
-            btn1.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-        } else if (img[7] == 7){
-            aleBtn = 7;
-            btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
-        } else if (img[8] == 8){
-            aleBtn = 8;
-            btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn2.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn4.setImageDrawable(getResources().getDrawable(circulo_m));
-            btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-            btn6.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn7.setImageDrawable(getResources().getDrawable(triangulo_m));
-            btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
-            btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-        } // Fim do If e Else
-
     } // Fim imagesAleatórios
 
     // Método Números Aleatórios
     @SuppressLint("SetTextI18n")
     private void numerosAleatorios() {
         int[] num = new int[4];
-
         for (int i=0; i<num.length; i++){
             num[i]=(int)(Math.random()*4);
 
