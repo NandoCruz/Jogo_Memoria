@@ -678,7 +678,6 @@ public class Tela2 extends AppCompatActivity {
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g1));
                         num1.setText("4");
-
                     } // fim do If else caso Imagem for 4 Triangulo
 
                 } else if (aleBtn == 7) { // 8ª sequência das imagens nos butões
@@ -832,7 +831,7 @@ public class Tela2 extends AppCompatActivity {
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g1));
                         btn5.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn6.setImageDrawable(getResources().getDrawable(triangulo_m));
-                        num1.setText("1");
+                        num2.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn4.setImageDrawable(getResources().getDrawable(circulo_g2));
@@ -1080,7 +1079,7 @@ public class Tela2 extends AppCompatActivity {
                         btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn5.setImageDrawable(getResources().getDrawable(quadrado_g1));
                         btn6.setImageDrawable(getResources().getDrawable(circulo_m));
-                        num1.setText("3");
+                        num2.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -1285,7 +1284,7 @@ public class Tela2 extends AppCompatActivity {
                         btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn6.setImageDrawable(getResources().getDrawable(circulo_g1));
-                        num1.setText("1");
+                        num2.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn4.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -1358,7 +1357,7 @@ public class Tela2 extends AppCompatActivity {
                     } else if (casoImg == 2) { // retangulo
                         btn4.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn5.setImageDrawable(getResources().getDrawable(quadrado_m));
-                        btn6.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        btn6.setImageDrawable(getResources().getDrawable(retangulo_g1));
                         num2.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
@@ -1441,7 +1440,7 @@ public class Tela2 extends AppCompatActivity {
                         btn7.setImageDrawable(getResources().getDrawable(quadrado_g1));
                         btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
-                        num2.setText("3");
+                        num3.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn7.setImageDrawable(getResources().getDrawable(quadrado_g2));
@@ -1525,7 +1524,7 @@ public class Tela2 extends AppCompatActivity {
                         btn9.setImageDrawable(getResources().getDrawable(circulo_m));
 
                     } else if (casoImg == 2) { // retangulo
-                        btn7.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        btn7.setImageDrawable(getResources().getDrawable(retangulo_g1));
                         btn8.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn9.setImageDrawable(getResources().getDrawable(circulo_m));
                         num3.setText("2");
@@ -2022,12 +2021,55 @@ public class Tela2 extends AppCompatActivity {
 
     } // fim do OnCreate
 
+    // Método Números Aleatórios
+    @SuppressLint("SetTextI18n")
+    private void numerosAleatorios() {
+        int[] num = new int[4];
+        for (int i=0; i<4; i++){
+            num[i]=(int)(Math.random()*4);
+
+            // Exibir Nome da Imagem e Imagem no topo
+            if (num[0] == 0){
+                imgTopo.setImageDrawable(getResources().getDrawable(circulo_p));
+                imgBase.setImageDrawable(getResources().getDrawable(circulo_p));
+                nomeImg2.setText("Toque nos Círulos");
+                result.setText("3");
+                valorImg.setText("= 1");
+                casoImg = 1;
+
+            } else if (num[1] == 1) {
+                imgTopo.setImageDrawable(getResources().getDrawable(retangulo_p));
+                imgBase.setImageDrawable(getResources().getDrawable(retangulo_p));
+                nomeImg2.setText("Toque nos Retâgulos");
+                result.setText("6");
+                valorImg.setText("= 2");
+                casoImg = 2;
+
+            } else if (num[2] == 2 ) {
+                imgTopo.setImageDrawable(getResources().getDrawable(quadrado_p));
+                imgBase.setImageDrawable(getResources().getDrawable(quadrado_p));
+                nomeImg2.setText("Toque nos Quadrados");
+                result.setText("9");
+                valorImg.setText("= 3");
+                casoImg = 3;
+
+            } else if (num[3] == 3) {
+                imgTopo.setImageDrawable(getResources().getDrawable(triangulo_p));
+                imgBase.setImageDrawable(getResources().getDrawable(triangulo_p));
+                nomeImg2.setText("Toque nos Triângilos");
+                result.setText("12");
+                valorImg.setText("= 4");
+                casoImg = 4;
+            } // fim do else if
+        } // fim do For
+    } // fim do numeroesAleatorios
+
     // Método Imagens Aleatórias:
     private void imagesAleatorios() {
-        int[] img = new int[10];
+        int[] img = new int[9];
 
-        for (int i=0; i<imageButtons.length; i++){
-            img[i] = (int)(Math.random()*10);
+        for (int i=0; i<9; i++){
+            img[i] = (int)(Math.random()*9);
 
             if (img[0] == 0){
                 aleBtn = 0;
@@ -2131,48 +2173,5 @@ public class Tela2 extends AppCompatActivity {
             } // Fim do If e Else
         } // fim do For
     } // Fim imagesAleatórios
-
-    // Método Números Aleatórios
-    @SuppressLint("SetTextI18n")
-    private void numerosAleatorios() {
-        int[] num = new int[4];
-        for (int i=0; i<num.length; i++){
-            num[i]=(int)(Math.random()*4);
-
-            // Exibir Nome da Imagem e Imagem no topo
-            if (num[0] == 0){
-                imgTopo.setImageDrawable(getResources().getDrawable(circulo_p));
-                imgBase.setImageDrawable(getResources().getDrawable(circulo_p));
-                nomeImg2.setText("Toque nos Círulos");
-                //result.setText("3");
-                valorImg.setText("= 1");
-                casoImg = 1;
-
-            } else if (num[1] == 1) {
-                imgTopo.setImageDrawable(getResources().getDrawable(retangulo_p));
-                imgBase.setImageDrawable(getResources().getDrawable(retangulo_p));
-                nomeImg2.setText("Toque nos Retâgulos");
-                //result.setText("6");
-                valorImg.setText("= 2");
-                casoImg = 2;
-
-            } else if (num[2] == 2 ) {
-                imgTopo.setImageDrawable(getResources().getDrawable(quadrado_p));
-                imgBase.setImageDrawable(getResources().getDrawable(quadrado_p));
-                nomeImg2.setText("Toque nos Quadrados");
-                //result.setText("9");
-                valorImg.setText("= 3");
-                casoImg = 3;
-
-            } else if (num[3] == 3) {
-                imgTopo.setImageDrawable(getResources().getDrawable(triangulo_p));
-                imgBase.setImageDrawable(getResources().getDrawable(triangulo_p));
-                nomeImg2.setText("Toque nos Triângilos");
-                //result.setText("12");
-                valorImg.setText("= 4");
-                casoImg = 4;
-            } // fim do Else If
-        } // fim do For
-    } // fim do numeroesAleatorios
 
 } // fim da classe
