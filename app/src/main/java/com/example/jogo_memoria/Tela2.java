@@ -65,6 +65,10 @@ public class Tela2 extends AppCompatActivity {
         botaoGerarNr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                num1.setText("0");
+                num2.setText("0");
+                num3.setText("0");
+                result.setText("0");
                 numerosAleatorios();
                 imagesAleatorios();
             }
@@ -2025,7 +2029,7 @@ public class Tela2 extends AppCompatActivity {
                 imgTopo.setImageDrawable(getResources().getDrawable(circulo_p));
                 imgBase.setImageDrawable(getResources().getDrawable(circulo_p));
                 nomeImg2.setText("Toque nos Círulos");
-                result.setText("3");
+                // result.setText("3");
                 valorImg.setText("= 1");
                 casoImg = 1;
 
@@ -2033,7 +2037,7 @@ public class Tela2 extends AppCompatActivity {
                 imgTopo.setImageDrawable(getResources().getDrawable(retangulo_p));
                 imgBase.setImageDrawable(getResources().getDrawable(retangulo_p));
                 nomeImg2.setText("Toque nos Retâgulos");
-                result.setText("6");
+                // result.setText("6");
                 valorImg.setText("= 2");
                 casoImg = 2;
 
@@ -2041,7 +2045,7 @@ public class Tela2 extends AppCompatActivity {
                 imgTopo.setImageDrawable(getResources().getDrawable(quadrado_p));
                 imgBase.setImageDrawable(getResources().getDrawable(quadrado_p));
                 nomeImg2.setText("Toque nos Quadrados");
-                result.setText("9");
+                // result.setText("9");
                 valorImg.setText("= 3");
                 casoImg = 3;
 
@@ -2049,7 +2053,7 @@ public class Tela2 extends AppCompatActivity {
                 imgTopo.setImageDrawable(getResources().getDrawable(triangulo_p));
                 imgBase.setImageDrawable(getResources().getDrawable(triangulo_p));
                 nomeImg2.setText("Toque nos Triângilos");
-                result.setText("12");
+                // result.setText("12");
                 valorImg.setText("= 4");
                 casoImg = 4;
             } // fim do else if
@@ -2163,6 +2167,7 @@ public class Tela2 extends AppCompatActivity {
                 btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(circulo_m));
             } // Fim do If e Else
+            
         } // fim do For
     } // Fim imagesAleatórios
 
