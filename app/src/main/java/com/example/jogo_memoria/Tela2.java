@@ -36,14 +36,6 @@ public class Tela2 extends AppCompatActivity {
     Integer casoImg, aleBtn;
     String valorCirculo, valorRetangulo, valorQuadrado, valorTriangulo;
 
-    // Declaração de ImageButtons Imagens Médias
-    Integer[] imageButtons = {
-            R.drawable.circulo_m,
-            R.drawable.quadrado_m,
-            R.drawable.triangulo_m,
-            R.drawable.retangulo_m,
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -2071,7 +2063,7 @@ public class Tela2 extends AppCompatActivity {
         for (int i=0; i<9; i++){
             img[i] = (int)(Math.random()*9);
 
-            if (img[0] == 0){
+            if (img[0] == 0 && casoImg != 4) {
                 aleBtn = 0;
                 btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -2082,7 +2074,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-            } else if (img[1] == 1){
+            } else if (img[1] == 1 && casoImg != 1 && casoImg != 2){
                 aleBtn = 1;
                 btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
@@ -2093,7 +2085,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn8.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
-            } else if (img[2] == 2){
+            } else if (img[2] == 2 && casoImg != 1){
                 aleBtn = 2;
                 btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -2104,7 +2096,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(triangulo_m));
-            } else if (img[3] == 3){
+            } else if (img[3] == 3 && casoImg != 4){
                 aleBtn = 3;
                 btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn2.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -2115,7 +2107,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn8.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-            } else if (img[4] == 4){
+            } else if (img[4] == 4 && casoImg != 3){
                 aleBtn = 4;
                 btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
@@ -2126,7 +2118,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(triangulo_m));
                 btn8.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(retangulo_m));
-            } else if (img[5] == 5){
+            } else if (img[5] == 5 && casoImg != 3 && casoImg != 4){
                 aleBtn = 5;
                 btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -2137,7 +2129,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
-            } else if (img[6] == 6){
+            } else if (img[6] == 6 && casoImg != 3){
                 aleBtn = 6;
                 btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -2148,7 +2140,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn8.setImageDrawable(getResources().getDrawable(triangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(circulo_m));
-            } else if (img[7] == 7){
+            } else if (img[7] == 7 && casoImg != 2 && casoImg != 4){
                 aleBtn = 7;
                 btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                 btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
@@ -2159,7 +2151,7 @@ public class Tela2 extends AppCompatActivity {
                 btn7.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn8.setImageDrawable(getResources().getDrawable(circulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(quadrado_m));
-            } else if (img[8] == 8){
+            } else if (img[8] == 8 && casoImg != 3 && casoImg != 4){
                 aleBtn = 8;
                 btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn2.setImageDrawable(getResources().getDrawable(circulo_m));
