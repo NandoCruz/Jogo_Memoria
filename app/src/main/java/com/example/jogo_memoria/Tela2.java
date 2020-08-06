@@ -90,6 +90,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g1));
@@ -101,11 +102,14 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("4");
+                        calcular();
                     } // fim do If else caso Imagem for 2 Retângulo
 
                 } else if (aleBtn == 1) { // 2ª séquência das imagens nos butões
@@ -119,16 +123,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 circulo
 
                 } else if (aleBtn == 2) { // 3ª sequência das imagens nos butões
@@ -136,16 +143,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g1));
@@ -159,11 +169,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g1));
@@ -175,6 +187,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 4 Quadrado
 
                 } else if (aleBtn == 4) { // 5ª sequência das imagens nos butões
@@ -182,6 +195,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g1));
@@ -193,11 +207,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retângulo
 
                 } else if (aleBtn == 5) { // 6ª sequência das imagens nos butões
@@ -205,16 +221,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_g1));
@@ -234,16 +253,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 circulo
 
                 } else if (aleBtn == 7) { // 8ª sequência das imagens nos butões
@@ -251,11 +273,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g1));
@@ -267,6 +291,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 3 Quadrado
 
                 } else if (aleBtn == 8) { // 9ª sequência das imagens nos butões
@@ -274,6 +299,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g1));
@@ -285,11 +311,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retângulo
                 } // fim do If Botão 1
             } // Fm do OnClick Botal 1
@@ -311,16 +339,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 1) { // 2ª séquência das imagens nos butões
@@ -328,11 +359,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -344,6 +377,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 3 Quadrado
 
                 } else if (aleBtn == 2) { // 3ª sequência das imagens nos butões
@@ -351,6 +385,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
@@ -362,11 +397,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retangulo
 
                 } else if (aleBtn == 3) { // 4ª sequência das imagens nos butões
@@ -380,16 +417,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 4) { // 5ª sequência das imagens nos butões
@@ -397,16 +437,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -426,16 +469,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 6) { // 7ª sequência das imagens nos butões
@@ -443,6 +489,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -454,11 +501,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retangulo
 
                 } else if (aleBtn == 7) { // 8ª sequência das imagens nos butões
@@ -466,16 +515,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
@@ -495,16 +547,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_g2));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_m));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
                 } // fim do If Botão 2
             } // Fm do OnClick
@@ -520,11 +575,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -536,6 +593,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 3 Quadrado
 
                 } else if (aleBtn == 1) { // 2ª séquência das imagens nos butões
@@ -543,16 +601,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -566,11 +627,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
@@ -582,6 +645,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(quadrado_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 3 Quadrado
 
                 } else if (aleBtn == 3) { // 4ª sequência das imagens nos butões
@@ -589,6 +653,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
@@ -600,11 +665,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retangulo
 
                 } else if (aleBtn == 4) { // 5ª sequência das imagens nos butões
@@ -618,16 +685,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 5) { // 6ª sequência das imagens nos butões
@@ -635,6 +705,7 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
@@ -646,11 +717,13 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(retangulo_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 2 Retangulo
 
                 } else if (aleBtn == 6) { // 7ª sequência das imagens nos butões
@@ -658,16 +731,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(circulo_m));
@@ -687,16 +763,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(quadrado_m));
                         btn2.setImageDrawable(getResources().getDrawable(triangulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(circulo_g2));
+                        num1.setText("4");
                     } // fim do If else caso Imagem for 1 Circulo
 
                 } else if (aleBtn == 8) { // 9ª sequência das imagens nos butões
@@ -704,16 +783,19 @@ public class Tela2 extends AppCompatActivity {
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("1");
 
                     } else if (casoImg == 2) { // retangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("2");
 
                     } else if (casoImg == 3) { // quadrado
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
                         btn2.setImageDrawable(getResources().getDrawable(circulo_m));
                         btn3.setImageDrawable(getResources().getDrawable(triangulo_g2));
+                        num1.setText("3");
 
                     } else if (casoImg == 4) { // triangulo
                         btn1.setImageDrawable(getResources().getDrawable(retangulo_m));
@@ -2017,6 +2099,21 @@ public class Tela2 extends AppCompatActivity {
 
     } // fim do OnCreate
 
+    // Calcular o valor das imagens
+    private void calcular() {
+        String n1 = num1.getText().toString();
+        String n2 = num2.getText().toString();
+        String n3 = num3.getText().toString();
+        int n_1 = Integer.parseInt(n1);
+        int n_2 = Integer.parseInt(n2);
+        int n_3 = Integer.parseInt(n3);
+        int soma = n_1 + n_2 + n_3;
+        String soma1 = " "+ soma;
+        result.setText(soma1);
+
+    }
+
+
     // Método Números Aleatórios
     @SuppressLint("SetTextI18n")
     private void numerosAleatorios() {
@@ -2167,7 +2264,7 @@ public class Tela2 extends AppCompatActivity {
                 btn8.setImageDrawable(getResources().getDrawable(retangulo_m));
                 btn9.setImageDrawable(getResources().getDrawable(circulo_m));
             } // Fim do If e Else
-            
+
         } // fim do For
     } // Fim imagesAleatórios
 
